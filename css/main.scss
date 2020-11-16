@@ -43,7 +43,7 @@ body {
   .container {
  min-height: calc(100vh - 130px);
   }
- background: url("/img/bhromaonBG.jpg") center top /cover no-repeat;
+ background: url("../img/bhromaonBG.jpg") center top /cover no-repeat;
  padding-top: 50px;
  box-sizing: border-box;
  width: 100%;
@@ -151,7 +151,7 @@ body {
   float: left;
   width: 149px;
   height: 60px;
-  background: $colorBlue url("/img/search_icon.svg") center right 2px no-repeat;
+  background: $colorBlue url("../img/search_icon.svg") center right 2px no-repeat;
   border: 3px solid #fff;
   border-left: none;
   cursor: pointer;
@@ -168,7 +168,7 @@ body {
   @media screen and (max-width: 768px) {
     width: 42px;
     font-size: 0;
-    background: $colorBlue url("/img/search_icon.svg") center center  no-repeat;
+    background: $colorBlue url("../img/search_icon.svg") center center  no-repeat;
   }
   @media screen and (max-width: 615px) {
    height: 42px;
@@ -331,7 +331,7 @@ body {
 
 /*------------section advantages--------- */
 .advantages {
- background: url('/img/advantagesBG.jpg')  no-repeat center top / cover ;
+ background: url('../img/advantagesBG.jpg')  no-repeat center top / cover ;
  
   &__description {
     margin-right: 90px;
@@ -380,7 +380,7 @@ body {
   
 }
 .advantages__pictureLeft {
-  background: url('/img/advantages__ima1.jpg')  no-repeat;
+  background: url('../img/advantages__ima1.jpg')  no-repeat;
   max-width: 350px;
   height: 220px;
   justify-self: start;
@@ -391,7 +391,7 @@ body {
 }
 
 .advantages__pictureRight {
-  background: url('/img/advantages__ima2.jpg') no-repeat;
+  background: url('../img/advantages__ima2.jpg') no-repeat;
   max-width: 350px;
   height: 220px;
   margin: 0 0 120px 80px;
@@ -447,14 +447,14 @@ body {
     
   }
   &__item--1 {
-    background: #333333 url('/img/loupe.svg') center no-repeat;
+    background: #333333 url('../img/loupe.svg') center no-repeat;
   }
  &__item--2 {
-   background: #333333 url('/img/Select_Places.svg') center no-repeat;
+   background: #333333 url('../img/Select_Places.svg') center no-repeat;
  }
 
 &__item--3 {
-  background: #333333 url('/img/Book_Enjoy.svg') center no-repeat;
+  background: #333333 url('../img/Book_Enjoy.svg') center no-repeat;
  }
  &__link {
    font-family: 'Aleo',serif;
@@ -477,7 +477,7 @@ body {
 
 /*------------section suggestion--------- */
 .suggestion {
-  background: url('/img/suggestionBG.jpg') no-repeat top center / cover;
+  background: url('../img/suggestionBG.jpg') no-repeat top center / cover;
   padding: 230px 0 100px 30px;
   
   &__card {
@@ -547,7 +547,7 @@ body {
 
 /*------------section suggestion--------- */
 .suggestion2 {
-  background: url('/img/suggestion2BG.jpg') no-repeat top center / cover;
+  background: url('../img/suggestion2BG.jpg') no-repeat top center / cover;
   padding: 230px 330px 100px 30px;
 
 }
@@ -568,7 +568,7 @@ body {
 /*------------section feedback--------- */
 
 .feedback {
-  background: url('/img/feedbackBG.jpg') no-repeat top center / cover;
+  background: url('../img/feedbackBG.jpg') no-repeat top center / cover;
   padding: 120px 0 200px 0;
   font-family: 'Josefin Sans',sans-serif;
   color: #fefefe;
