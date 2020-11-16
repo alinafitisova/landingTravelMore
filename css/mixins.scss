@@ -1,0 +1,52 @@
+@mixin btn {
+  background: linear-gradient(45deg, rgb(73, 107, 254) 0%, rgb(73, 107, 254) 41%, rgb(84, 116, 253) 41%, rgb(84, 116, 253) 100%);
+  text-transform: uppercase;
+  width: 225px;
+  height: 60px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+    transform: skew(-10deg);
+  }
+}
+
+@mixin logoBhromaon ($fz, $letSpac) { 
+  font-size: $fz;
+  letter-spacing: $letSpac;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  line-height: 26px;
+  text-transform: uppercase;
+ 
+}
+
+@mixin tagline ($fz, $letSpac) {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  line-height: 26px;
+  text-transform: none;
+  font-size: $fz;
+  letter-spacing: $letSpac;
+}
+@mixin heading ($txtAl) {
+  font-family: 'Aleo',serif;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: $txtAl;
+}
+@mixin text ($txtAl) {
+  font-family: 'Josefin Sans',sans-serif;
+  font-weight: 400;
+  color: #e8e8e8;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  text-align: $txtAl;
+}

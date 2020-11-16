@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap');
+
+@import "mixins.scss";
+
+
+
+// font-family: 'Aleo', serif;
+// font-family: 'Josefin Sans', sans-serif; 
+
+$colorBlue: #5474fd;
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Aleo', serif;
+  color: #fff;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  @media screen and (max-width: 1124px) {
+    padding: 0 40px;
+  }
+}
+/*------------section bhromaon---------- */
+.inner-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 194px;
+  @media screen and (max-width: 768px) {
+     padding-top: 174px;
+  }
+}
+.bhromaon {
+  .container {
+ min-height: calc(100vh - 130px);
+  }
+ background: url("/img/bhromaonBG.jpg") center top /cover no-repeat;
+ padding-top: 50px;
+ box-sizing: border-box;
+ width: 100%;
+   @media screen and (max-width: 1124px) {
+       padding-top: 0px;
+   }
+
+ &__logo{
+    @include logoBhromaon (48px, 0.1em);
+    text-align: center;
+    @media screen and (max-width: 615px) {
+      font-size: 28px;
+    }
+  }
+ &__tagline {
+   display: block;
+   margin: 15px 0 17px 0px;
+  @include tagline (22px, 0.31em);
+  @media screen and (max-width: 615px) {
+    font-size: 13px;
+  }
+ }
+ &__search {
+   max-width: 703px;
+   margin: 0 0 100px -12px;
+   @media screen and (max-width: 768px) {
+      margin: 0 0 40px -12px;
+   }
+ }
+}
+
+.bhromaon__input {
+  padding: 23px 0 26px 127px;
+  font-size: 14px;
+  border: 3px solid #fff;
+  float: left;
+  width: 500px;
+  height: 60px;
+  background: #ffff;
+  @media screen and (max-width: 768px) {
+    width: 250px;
+    padding: 23px 0 26px 6px;
+  }
+  @media screen and (max-width: 615px) {
+    width: 190px;
+   height: 42px;
+   padding: 12px 0 12px 6px;
+   background: rgba(255, 255, 255, 0.4);
+   &::-webkit-input-placeholder {
+     opacity: 0;
+   }
+
+   &::-moz-placeholder {
+     opacity: 0;
+   }
+
+   &::-moz-placeholder {
+     opacity: 0;
+   }
+
+   &:-ms-input-placeholder {
+     opacity: 0;
+     /*Firefox 18-*/
+   }
+  }
+  &::-webkit-input-placeholder {
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 400;
+    color: #999999;
+    text-align: center;
+    letter-spacing: 0.2em;
+  
+  }
+   &::-moz-placeholder {
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 400;
+    color: #999999;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+   &::-moz-placeholder {/*Firefox 19+*/
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 400;
+    color: #999999;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+   &:-ms-input-placeholder {/*Firefox 18-*/
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 400;
+    color: #999999;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+}
+
+.bhromaon__btn {
+  font-family: 'Aleo',serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  float: left;
+  width: 149px;
+  height: 60px;
+  background: $colorBlue url("/img/search_icon.svg") center right 2px no-repeat;
+  border: 3px solid #fff;
+  border-left: none;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+    transition: 0.2s;
+  }
+  /* Clear floats */
+   &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  @media screen and (max-width: 768px) {
+    width: 42px;
+    font-size: 0;
+    background: $colorBlue url("/img/search_icon.svg") center center  no-repeat;
+  }
+  @media screen and (max-width: 615px) {
+   height: 42px;
+   width: 42px;
+  }
+}
+
+.scrollDown{
+ align-self: center;
+ &__scroll {
+   text-align: center;
+   color: #fff;
+   @media screen and (max-width: 615px) {
+     font-size: 13px;
+   }
+ }
+ &__arrow {
+   @include tagline (14px, 0.02em);
+   display: block;
+   text-decoration: none;
+   text-align: center;
+ }
+}
+
+
+/*------------header---------- */
+.header {
+  background: $colorBlue;
+  max-height: 80px;
+  position: sticky;
+  top: 0;
+@media screen and (max-width: 615px) {
+  max-height: 50px;
+}
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+     @media screen and (max-width: 615px) {
+     padding: 5px;
+     }
+  }
+  &__logo {
+    display: block;
+    text-decoration: none;
+    @include logoBhromaon (24px, 0.01em);
+    &:hover {
+      color: #293980;
+      transition: 0.3s;
+    }
+    @media screen and (max-width: 615px) {
+      font-size: 13px;
+    }
+  }
+    
+}
+ 
+   /*--  humburger -- */
+.menu {
+  @media screen and (max-width: 820px) {
+    display: none;
+
+    input:checked ~ & {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-items: center;
+      position: fixed;
+      top: 80px;
+      right: 0;
+      background: $colorBlue;
+      opacity: 0.8;
+      overflow: auto;
+    }
+  }
+}
+
+.menu__item {
+  font-family: 'Aleo', serif;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: #293980;
+    transition: 0.3s;
+  }
+
+  nav & {
+    margin: 10px;
+  }
+}
+
+#hamburger {
+  display: none;
+
+  & + label {
+    display: none;
+    width: 42px;
+    height: 42px;
+
+    @media screen and (max-width: 820px) {
+      display: flex;
+    }
+
+    span {
+      width: 30px;
+      height: 3px;
+      background: #fff;
+      display: block;
+      position: relative;
+      margin: auto;
+      transition: .5s;
+
+      &:before,
+      &:after {
+        transition: .5s;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        display: block;
+        background: #fff;
+      }
+
+      &:before {
+        top: -10px;
+      }
+
+      &:after {
+        bottom: -10px;
+      }
+    }
+  }
+
+  &:checked + label {
+    span {
+      background: transparent;
+      transform: rotate(180deg);
+
+      &:before,
+      &:after {
+        top: 50%;
+        bottom: initial;
+        width: 110%;
+        background: #fff;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+/*------------section advantages--------- */
+.advantages {
+ background: url('/img/advantagesBG.jpg')  no-repeat center top / cover ;
+ 
+  &__description {
+    margin-right: 90px;
+}
+ &__heading {
+   @include heading (left) ;
+   margin: 0 0 72px 0;
+   @media screen and (max-width: 615px) {
+      font-size: 26px;
+      margin: 0 0 47px 0;
+   }
+ }
+ &__text {
+   @include text (left);
+   max-width: 540px;
+   &:not(:last-of-type) {
+     margin-bottom: 40px;
+   }
+   @media screen and (max-width: 615px) {
+     font-size: 14px;
+   }
+ }
+ &__btn {
+   @include btn;
+   margin-top: 50px;
+ }
+
+ &__images {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+  
+ }
+ 
+}
+.inner-advantages {
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+}
+.advantages__pictureLeft {
+  background: url('/img/advantages__ima1.jpg')  no-repeat;
+  max-width: 350px;
+  height: 220px;
+  justify-self: start;
+  margin-bottom: 5px;
+  @media screen and (max-width: 768px) {
+     display: none;
+  }
+}
+
+.advantages__pictureRight {
+  background: url('/img/advantages__ima2.jpg') no-repeat;
+  max-width: 350px;
+  height: 220px;
+  margin: 0 0 120px 80px;
+  justify-self: end;
+  @media screen and (max-width: 768px) {
+    display: none;
+    
+  }
+
+}
+
+/*------------section functions--------- */
+.functions {
+  background: #333333;
+  .container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  &__bow {
+    margin: 40px auto 0;
+    max-width: 792px;
+     @media screen and (max-width: 768px) {
+       display: none;
+     }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 120px;
+     @media screen and (max-width: 768px) {
+        margin-bottom: 40px;
+        margin-top: 10px;
+     }
+     @media screen and (max-width: 615px) {
+       flex-direction: column;
+     }
+  }
+  &__box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: -40px;
+    @media screen and (max-width: 615px) {
+      margin-top: 25px;
+    }
+  }
+  &__item {
+    border: 1px solid #3333;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    
+  }
+  &__item--1 {
+    background: #333333 url('/img/loupe.svg') center no-repeat;
+  }
+ &__item--2 {
+   background: #333333 url('/img/Select_Places.svg') center no-repeat;
+ }
+
+&__item--3 {
+  background: #333333 url('/img/Book_Enjoy.svg') center no-repeat;
+ }
+ &__link {
+   font-family: 'Aleo',serif;
+   font-weight: 400;
+   font-size: 36px;
+   color: #e8e8e8;
+   text-decoration: none;
+   &:hover {
+     color: $colorBlue;
+     transition: 0.3s;
+   }
+   @media screen and (max-width: 768px) {
+     font-size: 27px;
+   }
+   @media screen and (max-width: 615px) {
+     font-size: 22px;
+   }
+ }
+}
+
+/*------------section suggestion--------- */
+.suggestion {
+  background: url('/img/suggestionBG.jpg') no-repeat top center / cover;
+  padding: 230px 0 100px 30px;
+  
+  &__card {
+    font-family: 'Josefin Sans',sans-serif;
+    float: left;
+    background-color: rgb(35, 35, 35);
+    opacity: 0.902;
+    width: 540px;
+    height: 371px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    @media screen and (max-width: 615px) {
+      width: 405px;
+      height: 351px;
+      padding: 0px 24px;
+    }
+    @media screen and (max-width: 500px) {
+       width: 305px;
+       height: 301px;
+       padding: 0px 16px;
+    }
+  }
+  &__country {
+    font-weight: 400;
+    font-size: 20px;
+    color: #e8e8e8;
+    letter-spacing: 0.075em;
+    margin-bottom: 27px;
+    @media screen and (max-width: 500px) {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+  &__hotel {
+   font-weight: 400;
+   font-size: 20px;
+   text-transform: uppercase;
+   color: #fff;
+   margin-bottom: 20px;
+   @media screen and (max-width: 500px) {
+       font-size: 14px;
+       margin-bottom: 0px;
+   }
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #e8e8e8;
+    line-height: 26px;
+    margin-bottom: 44px;
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
+      margin-bottom: 0px;
+    }
+  }
+  &__btn {
+    @include btn;
+     @media screen and (max-width: 500px) {
+        width: 145px;
+        height: 46px;
+        font-size: 12px;
+        margin-top: 23px;
+     }
+
+  }
+}
+
+/*------------section suggestion--------- */
+.suggestion2 {
+  background: url('/img/suggestion2BG.jpg') no-repeat top center / cover;
+  padding: 230px 330px 100px 30px;
+
+}
+.suggestion__inner {
+  display: flex;
+}
+.suggestion__empty,
+.suggestion__right {
+  width: 50%;
+}
+.suggestion__right {
+  @media screen and (max-width: 768px) {
+    margin-right: 50px;
+  }
+}
+
+
+/*------------section feedback--------- */
+
+.feedback {
+  background: url('/img/feedbackBG.jpg') no-repeat top center / cover;
+  padding: 120px 0 200px 0;
+  font-family: 'Josefin Sans',sans-serif;
+  color: #fefefe;
+    
+  &__heading {
+    @include heading (center);
+    margin-bottom: 100px;
+    @media screen and (max-width: 615px) {
+      font-size: 26px;
+      margin-bottom: 45px;
+    }
+  }
+  &__box {
+    display: flex;
+    background-color: #333333;
+     @media screen and (max-width: 768px) {
+       flex-direction: column;
+     }
+  }
+  &__img {
+    width: 445px;
+    @media screen and (max-width: 615px) {
+      width: 100%;
+    }
+  }
+  &__description {
+     padding: 50px 52px 50px 60px;
+     
+  }
+  &__name {
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 50px 0;
+  }
+  &__text i {
+    color: $colorBlue;
+    font-size: 20px;
+    float: left;
+    margin-right: 10px;
+    margin-top: -15px;
+  } 
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    
+  }
+}
+
+
+/*------------footer --------- */
+.footer {
+  background: #232323;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__log {
+    @include logoBhromaon (24px, 0.14em);
+    margin-top: 120px;
+    @media screen and (max-width: 1124px) {
+      margin-top: 50px;
+    }
+    
+  }
+  &__tagline {
+    display: block;
+    @include tagline (16px, 0.1em);
+    margin-bottom: 30px;
+  }
+  &__icon {
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 52px;
+    &:hover {
+      color: $colorBlue;
+      transition: 0.3s;
+    }
+  }
+  .footer__icon:not(:last-child) {
+    margin-right: 23px;
+  }
+}
