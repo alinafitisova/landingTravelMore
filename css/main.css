@@ -54,7 +54,7 @@ body {
 }
 
 .bhromaon {
-  background: url("/img/bhromaonBG.jpg") center top/cover no-repeat;
+  background: url("../img/bhromaonBG.jpg") center top/cover no-repeat;
   padding-top: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -201,7 +201,7 @@ body {
   float: left;
   width: 149px;
   height: 60px;
-  background: #5474fd url("/img/search_icon.svg") center right 2px no-repeat;
+  background: #5474fd url("../img/search_icon.svg") center right 2px no-repeat;
   border: 3px solid #fff;
   border-left: none;
   cursor: pointer;
@@ -224,7 +224,7 @@ body {
   .bhromaon__btn {
     width: 42px;
     font-size: 0;
-    background: #5474fd url("/img/search_icon.svg") center center no-repeat;
+    background: #5474fd url("../img/search_icon.svg") center center no-repeat;
   }
 }
 
@@ -440,7 +440,7 @@ nav .menu__item {
 
 /*------------section advantages--------- */
 .advantages {
-  background: url("/img/advantagesBG.jpg") no-repeat center top/cover;
+  background: url("../img/advantagesBG.jpg") no-repeat center top/cover;
 }
 
 .advantages__description {
@@ -546,7 +546,7 @@ nav .menu__item {
 }
 
 .advantages__pictureLeft {
-  background: url("/img/advantages__ima1.jpg") no-repeat;
+  background: url("../img/advantages__ima1.jpg") no-repeat;
   max-width: 350px;
   height: 220px;
   -ms-grid-column-align: start;
@@ -561,7 +561,7 @@ nav .menu__item {
 }
 
 .advantages__pictureRight {
-  background: url("/img/advantages__ima2.jpg") no-repeat;
+  background: url("../img/advantages__ima2.jpg") no-repeat;
   max-width: 350px;
   height: 220px;
   margin: 0 0 120px 80px;
@@ -654,15 +654,15 @@ nav .menu__item {
 }
 
 .functions__item--1 {
-  background: #333333 url("/img/loupe.svg") center no-repeat;
+  background: #333333 url("../img/loupe.svg") center no-repeat;
 }
 
 .functions__item--2 {
-  background: #333333 url("/img/Select_Places.svg") center no-repeat;
+  background: #333333 url("../img/Select_Places.svg") center no-repeat;
 }
 
 .functions__item--3 {
-  background: #333333 url("/img/Book_Enjoy.svg") center no-repeat;
+  background: #333333 url("../img/Book_Enjoy.svg") center no-repeat;
 }
 
 .functions__link {
@@ -693,7 +693,7 @@ nav .menu__item {
 
 /*------------section suggestion--------- */
 .suggestion {
-  background: url("/img/suggestionBG.jpg") no-repeat top center/cover;
+  background: url("../img/suggestionBG.jpg") no-repeat top center/cover;
   padding: 230px 0 100px 30px;
 }
 
@@ -807,7 +807,7 @@ nav .menu__item {
 
 /*------------section suggestion--------- */
 .suggestion2 {
-  background: url("/img/suggestion2BG.jpg") no-repeat top center/cover;
+  background: url("../img/suggestion2BG.jpg") no-repeat top center/cover;
   padding: 230px 330px 100px 30px;
 }
 
@@ -830,7 +830,7 @@ nav .menu__item {
 
 /*------------section feedback--------- */
 .feedback {
-  background: url("/img/feedbackBG.jpg") no-repeat top center/cover;
+  background: url("../img/feedbackBG.jpg") no-repeat top center/cover;
   padding: 120px 0 200px 0;
   font-family: 'Josefin Sans',sans-serif;
   color: #fefefe;
